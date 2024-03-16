@@ -23,9 +23,13 @@
     "@angular/ssr": "^17.0.7",
     "bootstrap": "^5.3.3",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     "bootstrap-icons": "^1.11.3",
 >>>>>>> origin/movie-search
+=======
+    "bootstrap-icons": "^1.11.3",
+>>>>>>> origin/footer
     "express": "^4.18.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

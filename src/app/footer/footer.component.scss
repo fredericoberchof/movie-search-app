@@ -1,0 +1,9 @@
+.verticalLine {
+  border-left: thick solid #ff0000;
+}
+
+@media (max-width: 700px) {
+  .responsive {
+    height: 70px;
+  }
+}

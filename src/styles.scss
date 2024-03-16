@@ -1,5 +1,15 @@
 @import "bootstrap/scss/bootstrap";
 
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  text-align: center;
+  padding: 10px 0;
+}
+
 .text {
   color: #3c4048;
   font-family: "Lato", sans-serif;

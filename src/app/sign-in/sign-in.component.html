@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-4 mt-4">
+      <h2 class="text-center mb-4 text">Welcome back!</h2>
+      <form [formGroup]="registerForm" (ngSubmit)="register()">
+        <div class="form-group mt-3">
+          <b> <label class="text">E-mail</label></b>
+          <input
+            type="email"
+            class="form-control mt-2"
+            formControlName="email"
+          />
+        </div>
+        <div class="form-group mt-3">
+          <b> <label class="text">Password</label></b>
+          <input
+            type="password"
+            class="form-control mt-2"
+            formControlName="password"
+          />
+        </div>
+        <div class="text-center mt-3">
+          <button type="submit" class="btn btn-primary btn-bigger">
+            Login
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

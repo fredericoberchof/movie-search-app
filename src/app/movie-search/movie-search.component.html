@@ -1,0 +1,83 @@
+<div class="container-block">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="text header mt-5">
+          <h1>Search your movie</h1>
+        </div>
+        <div class="search-bar mt-5">
+          <input
+            type="text"
+            placeholder="Search the name's movie"
+            [(ngModel)]="movieName"
+            class="form-control"
+          />
+          <button (click)="search()" class="btn btn-primary mx-4 btn-bigger">
+            <i class="bi bi-search me-2"></i>
+            <span class="hide-text">Search</span>
+          </button>
+          <button (click)="reset()" class="btn btn-secondary btn-bigger">
+            <i class="bi bi-x-lg me-2"></i>
+            <span class="hide-text">Reset</span>
+          </button>
+        </div>
+
+        @if (showErrorMessage) {
+        <div class="alert alert-danger text-justify" role="alert">
+          Movie not found. Please try again.
+        </div>
+
+        } @if (movie && showErrorMessage === false) {
+        <div class="movie-details">
+          <div class="row">
+            <div class="col-md-3">
+              <img
+                [src]="movie.Poster"
+                alt="Poster do Filme"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="text description">
+                <h2>{{ movie.Title }}</h2>
+                <p><strong>Description:</strong> {{ movie.Plot }}</p>
+                <p><strong>Actors:</strong> {{ movie.Actors }}</p>
+                <p><strong>Rating:</strong> {{ movie.imdbRating }}</p>
+                <button
+                  class="btn me-2"
+                  title="Like"
+                  [ngClass]="{
+                    'btn-secondary': !favorite,
+                    'btn-success': favorite
+                  }"
+                  (click)="toggleFavorito()"
+                >
+                  <i class="bi bi-hand-thumbs-up-fill"></i>
+                </button>
+                <button
+                  class="btn me-2"
+                  title="Dislike"
+                  [ngClass]="{
+                    'btn-secondary': !negative,
+                    'btn-danger': negative
+                  }"
+                  (click)="toggleNegativo()"
+                >
+                  <i class="bi bi-hand-thumbs-down-fill"></i>
+                </button>
+                <button
+                  class="btn btn-secondary"
+                  title="Share"
+                  (click)="share()"
+                >
+                  <i class="bi bi-share-fill"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        }
+      </div>
+    </div>
+  </div>
+</div>

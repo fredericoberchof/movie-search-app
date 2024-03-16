@@ -5,12 +5,19 @@
         <div class="text header mt-5">
           <h1>Search your movie</h1>
         </div>
+        <div class="text text-center">
+          <h6>
+            Unleash the magic of cinema with our movie search platform, where
+            every search is a unique cinematic journey!
+          </h6>
+        </div>
         <div class="search-bar mt-5">
           <input
             type="text"
             placeholder="Search the name's movie"
             [(ngModel)]="movieName"
             class="form-control"
+            (keyup.enter)="search()"
           />
           <button (click)="search()" class="btn btn-primary mx-4 btn-bigger">
             <i class="bi bi-search me-2"></i>
@@ -33,7 +40,7 @@
             <div class="col-md-3">
               <img
                 [src]="movie.Poster"
-                alt="Poster do Filme"
+                alt="Film poster"
                 class="img-fluid"
               />
             </div>
@@ -76,6 +83,8 @@
             </div>
           </div>
         </div>
+        } @else {
+        <app-cover></app-cover>
         }
       </div>
     </div>

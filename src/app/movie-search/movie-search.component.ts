@@ -2,13 +2,14 @@ import { Component } from '@angular/core';
 import { MoviesService } from '../services/movies.service';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { CoverComponent } from "../cover/cover.component";
 
 @Component({
-  selector: 'app-movie-search',
-  standalone: true,
-  imports: [FormsModule, CommonModule],
-  templateUrl: './movie-search.component.html',
-  styleUrl: './movie-search.component.scss',
+    selector: 'app-movie-search',
+    standalone: true,
+    templateUrl: './movie-search.component.html',
+    styleUrl: './movie-search.component.scss',
+    imports: [FormsModule, CommonModule, CoverComponent]
 })
 export class MovieSearchComponent {
   movieName: string;

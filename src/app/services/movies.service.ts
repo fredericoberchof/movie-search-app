@@ -13,4 +13,8 @@ export class MoviesService {
   searchMovie(movieName: string): Observable<any> {
     return this.http.get(`${this.apiUrl}&t=${movieName}`);
   }
+
+  searchTitle(searchTerm: string): Observable<any> {
+    return this.http.get(`${this.apiUrl}&s=${searchTerm}`);
+  }
 }

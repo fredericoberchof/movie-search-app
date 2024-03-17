@@ -1,4 +1,5 @@
-# ✔️ Projeto Movie Search
+# 🎬 Projeto Movie Search
+* O projeto Movie Search foi desenvolvido para permitir que os usuários busquem por títulos de filmes, fornecendo informações como a descrição do filme, os atores principais e a classificação do filme. Na página inicial, são exibidos os filmes mais buscados pelos usuários. O projeto também inclui áreas de Registro e Login, que ainda não estão totalmente operacionais. A aplicação é responsiva e foi projetada para funcionar em dispositivos móveis.
  
 # 🚀 Tecnologias
 
@@ -7,7 +8,11 @@
 * HTML 5
 * SCSS
 
-# ⚙️ Para rodar essa aplicação
+# ✔️ Acessar o projeto onlie
+
+* O projeto pode ser acessado pelo link https://movie-search-br.netlify.app/
+
+# ⚙️ Para acessar o código e rodar essa aplicação
 
 ```
 # Certifique-se de que o Angular CLI esteja instalado globalmente no seu sistema. Se não estiver, você pode instalá-lo usando o comando npm install -g @angular/cli
@@ -38,7 +43,7 @@ http://localhost:4200/
 
 
 
-## 📬 Contact
+## 📬 Contatos
 
 - <a href="https://www.linkedin.com/in/frederico-berchof-69983a135/">Linkdin</a>
 - <a href="https://github.com/fredericoberchof">GitHub</a>
